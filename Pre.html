@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Малайзия как правовое государство</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #1d4ed8;
+            --accent: #f59e0b;
+            --bg-slide: #ffffff;
+            --text-main: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #0f172a;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .slide {
+            width: 100%;
+            max-width: 950px;
+            min-height: 560px;
+            background: var(--bg-slide);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+            padding: 40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            border-top: 8px solid var(--secondary);
+        }
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+        .badge {
+            background: #eff6ff;
+            color: var(--secondary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .slide-number {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 24px;
+            margin: 0;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 25px;
+            align-items: center;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .info-card {
+            background: #f8fafc;
+            border-left: 4px solid var(--secondary);
+            padding: 10px 14px;
+            border-radius: 0 8px 8px 0;
+            font-size: 13px;
+            color: var(--text-main);
+            line-height: 1.4;
+        }
+        .info-card strong {
+            color: var(--primary);
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+        li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .img-box {
+            width: 100%;
+            height: 240px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Стили для карты путей (схемы) */
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .roadmap-step {
+            display: flex;
+            align-items: center;
+            background: #f1f5f9;
+            padding: 10px 15px;
+            border-radius: 8px;
+            position: relative;
+            font-size: 13px;
+        }
+        .roadmap-step::after {
+            content: '↓';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .roadmap-step span {
+            background: var(--secondary);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 12px;
+        }
+        .links-box {
+            font-size: 13px;
+            line-height: 1.6;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .links-box a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .links-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- СЛАЙД 1: Титульный -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Вводный слайд</span>
+            <span class="slide-number">Слайд 1 из 9</span>
+        </div>
+        <div style="text-align: center; margin: auto 0;">
+            <h1 style="font-size: 34px; color: var(--secondary); margin-bottom: 15px;">Малайзия как правовое государство</h1>
+            <p style="font-size: 16px; color: #64748b;">Особенности конституционализма, гибридной правовой системы и институтов власти</p>
+        </div>
+        <div class="img-box" style="height: 160px;">
+            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80" alt="Куала-Лумпур Малайзия">
+        </div>
+    </div>
+
+    <!-- СЛАЙД 2: Понятие и основы -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Участник 1</span>
+            <span class="slide-number">Слайд 2 из 9</span>
+        </div>
+        <h1>Понятие и основы правового государства</h1>
+        <div class="grid-2">
+            <div class="card-container">
+                <div class="info-card"><strong>1. Верховное положение Конституции:</strong> Согласно Статье 4(1) Федеральной Конституции Малайзии 1957 года, она является высшим законом страны.</div>
+                <div class="info-card"><strong>2. Гибридный характер права:</strong> Уникальный синтез британского общего права (*Common Law*), малайских обычаев (*Adat*) и норм исламского права (шариата).</div>
+                <div class="info-card"><strong>3. Ограничение власти:</strong> Ни один государственный орган или должностное лицо не обладает абсолютной властью вне рамок закона.</div>
+            </div>
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1584635300445-5d444a773809?auto=format&fit=crop&w=800&q=80" alt="Законодательство">
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 3: Ключевые признаки -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Участник 2</span>
+            <span class="slide-number">Слайд 3 из 9</span>
+        </div>
+        <h1>Ключевые признаки правового государства</h1>
+        <div class="grid-2">
+            <ul>
+                <li><strong>4. Конституционная монархия:</strong> Главой государства является Верховный правитель (*Янг ди-Пертуан Агонг*), чьи полномочия строго ограничены нормами Конституции.</li>
+                <li><strong>5. Равенство перед законом:</strong> Статья 8 гарантирует равенство всех граждан перед судом и равную защиту закона без дискриминации.</li>
+                <li><strong>6. Разделение компетенций:</strong> Четкое разграничение полномочий между федеральным центром и 13 штатами.</li>
+                <li><strong>7. Защита меньшинств:</strong> Учет мультиэтнического состава населения в правовой структуре страны.</li>
+            </ul>
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=800&q=80" alt="Государственность">
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 4: Предпосылки -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Участник 3</span>
+            <span class="slide-number">Слайд 4 из 9</span>
+        </div>
+        <h1>Предпосылки и историческое становление</h1>
+        <div class="grid-2">
+            <div class="card-container">
+                <div class="info-card"><strong>Исторический фундамент:</strong> Обретение независимости в 1957 году (Merdeka) и принятие базового свода законов.</div>
+                <div class="info-card"><strong>Федеральная интеграция:</strong> Объединение в 1963 году полуострова с регионами Сабах и Саравак, потребовавшее адаптации правовой базы.</div>
+                <div class="info-card"><strong>Институциональное развитие:</strong> Создание независимых институтов контроля, прокуратуры и аудита.</div>
+            </div>
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Архитектура власти">
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 5: Разделение властей -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Участник 4</span>
+            <span class="slide-number">Слайд 5 из 9</span>
+        </div>
+        <h1>Разделение властей и судебная система</h1>
+        <div class="grid-2">
+            <ul>
+                <li><strong>Законодательная ветвь:</strong> Двухпалатный Парламент (Сенат и Палата представителей), принимающий законы.</li>
+                <li><strong>Исполнительная ветвь:</strong> Кабинет Министров во главе с Премьер-министром, ответственный перед парламентом.</li>
+                <li><strong>Судебная иерархия:</strong> Возглавляется Верховным судом (*Federal Court*), за которым следуют Апелляционный и Высокие суды.</li>
+                <li><strong>Независимость судей:</strong> Специальные конституционные гарантии несменяемости судей высших инстанций.</li>
+            </ul>
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80" alt="Парламент Малайзии">
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 6: Функции и защита прав -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Участник 5</span>
+            <span class="slide-number">Слайд 6 из 9</span>
+        </div>
+        <h1>Функции государства и защита прав граждан</h1>
+        <div class="grid-2">
+            <div class="card-container">
+                <div class="info-card"><strong>Фундаментальные свободы:</strong> Закрепленные в Части II Конституции права на свободу слова, мирных собраний и вероисповедания.</div>
+                <div class="info-card"><strong>Институт судебного надзора (*Judicial Review*):</strong> Возможность граждан оспаривать через суды незаконные действия исполнительной власти.</div>
+                <div class="info-card"><strong>Правоохранительная система:</strong> Деятельность Королевской полиции Малайзии в строгом соответствии с Уголовно-процессуальным кодексом.</div>
+            </div>
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=800&q=80" alt="Права человека">
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 7: Вызовы и перспективы -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Участник 6</span>
+            <span class="slide-number">Слайд 7 из 9</span>
+        </div>
+        <h1>Вызовы и перспективы развития правового государства</h1>
+        <div class="grid-2">
+            <ul>
+                <li><strong>Баланс безопасности:</strong> Нахождение золотой середины между общегосударственной безопасностью и цифровыми свободами граждан.</li>
+                <li><strong>Дуализм юрисдикций:</strong> Взаимодействие гражданских судов и параллельной системы судов шариата в семейных вопросах мусульман.</li>
+                <li><strong>Антикоррупционная политика:</strong> Совершенствование институтов прозрачности и независимости следственных органов.</li>
+            </ul>
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Развитие">
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 8: Обобщение (Карта путей) -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Обобщение</span>
+            <span class="slide-number">Слайд 8 из 9</span>
+        </div>
+        <h1>Карта путей реализации правового государства</h1>
+        <div class="roadmap">
+            <div class="roadmap-step">
+                <span>Шаг 1</span> <strong>Федеральная Конституция:</strong> Базовый высший закон, учреждающий институты и определяющий статус монархии.
+            </div>
+            <div class="roadmap-step">
+                <span>Шаг 2</span> <strong>Разделение властей:</strong> Распределение функций между Парламентом, Правительством и независимым Верховным судом.
+            </div>
+            <div class="roadmap-step">
+                <span>Шаг 3</span> <strong>Защита прав граждан:</strong> Обеспечение равенства (Ст. 8) и применение механизма судебного надзора (*Judicial Review*).
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 9: Источники -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="badge">Источники</span>
+            <span class="slide-number">Слайд 9 из 9</span>
+        </div>
+        <h1>Литература, ссылки и источники</h1>
+        <div class="links-box">
+            <p><strong>Нормативные акты:</strong> Федеральная Конституция Малайзии — <a href="https://www.agc.gov.my" target="_blank">Attorney General's Chambers</a></p>
+            <p><strong>Официальные порталы:</strong> <a href="https://www.parlimen.gov.my" target="_blank">Парламент Малайзии</a> | <a href="https://www.kehakiman.gov.my" target="_blank">Судебная система Малайзии</a></p>
+            <p><strong>Видео-материалы:</strong> 
+                <a href="https://www.youtube.com/watch?v=cn1GEyVMnIU" target="_blank">Видеолекция №1</a> | 
+                <a href="https://www.youtube.com/watch?v=dF9k3Sf8bO4" target="_blank">Видеолекция №2</a>
+            </p>
+            <p><strong>Литература:</strong> Suffian M. <i>An Introduction to the Constitution of Malaysia</i>; Stanton G. <i>The Malaysian Legal System</i>.</p>
+            <p><strong>Изображения:</strong> Загружены из открытой базы Unsplash (архитектура Куала-Лумпура и правовые символы).</p>
+        </div>
+    </div>
+
+</body>
+</html>
